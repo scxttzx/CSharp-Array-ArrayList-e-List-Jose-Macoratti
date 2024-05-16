@@ -22,12 +22,18 @@ ExibirDados(frutas);
 
 var frutasOrdenadas = frutas.Order().ToList();
 Console.WriteLine();
+
 foreach (string fOrdenada in frutasOrdenadas)
 {
     Console.WriteLine(fOrdenada);
 }
 
-
+ var frutasInvertidas = frutas.OrderDescending().ToList();
+Console.WriteLine();
+foreach (string fInversa in frutasInvertidas)
+{
+    Console.WriteLine(fInversa);
+}
 
 static void ExibirDados(string[] frutas)
 {
@@ -37,4 +43,5 @@ static void ExibirDados(string[] frutas)
 		Console.WriteLine(fruta);
 	}
 }
+
 

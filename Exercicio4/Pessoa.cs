@@ -11,7 +11,6 @@ public class Pessoa
 {
     public string Nome { get; set; }
     public int Idade { get; set; }
-
     public static void Exibir(Pessoa pessoa)
     {
         Console.WriteLine($"Nome: {pessoa.Nome}\nIdade: {pessoa.Idade}");
